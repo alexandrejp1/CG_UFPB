@@ -1,6 +1,6 @@
 # Menu
 
-* [Atividade 1 - Bresenham](#bresenham)
+* [Atividade 1 - Bresenham](#atividade_1_-_bresenham)
 
 ## Grupo
 Alexandre Costa Santa Cruz 2016013344
@@ -8,7 +8,7 @@ Alexandre Costa Santa Cruz 2016013344
 Nilbson Rafael Oliveira Galindo 2016011869
 
 ---
-
+## Atividade 1 - Bresenham
 ### Objetivo
 A primeira atividade da disciplina de Introdução à Computação Gráfica tem como principal objetivo o desenvolvimento e implementação do algorimo de Bresenham para a rasterização de linhas. Este, por sua vez, traz uma forma de solucionar o problema de desenhar uma reta em uma tela pixelada. Para tanto, a tarefa propõe a criação de uma função para pintar um pixel na tela, uma função para desenhar uma reta na tela e uma função para desenhar um triângulo na tela. Por fim, além das 3 funções requisitadas, pede-se também que ocorra a interpolação linear das cores durante a formação das retas e do triângulo.
 
@@ -40,7 +40,7 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 
 <ul>
 	<li>A primeira modificação a ser feita é considerar apenas os valores absolutos das variações dx e dy.</li>
-	<li>A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi)</li>
+	<li>A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi).</li>
 	<li>A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.</li>
 	<li>Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.</li>
 <ul>
@@ -63,6 +63,7 @@ A última etapa da tarefa era o desenho de o um triângulo que é só chamar a f
 	<h5 align="center">Figura 4 -Função de desenhar o Triângulo</h5>
 	<br>
 </p>
+
 
 ---
 
