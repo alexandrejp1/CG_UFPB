@@ -1,6 +1,6 @@
 # Menu
 
-* [Atividade 1 - Bresenham](#atividade_1_-_bresenham)
+* [Atividade 1 - Bresenham](#bresenham)
 
 ## Grupo
 Alexandre Costa Santa Cruz 2016013344
@@ -8,7 +8,7 @@ Alexandre Costa Santa Cruz 2016013344
 Nilbson Rafael Oliveira Galindo 2016011869
 
 ---
-## Atividade 1 - Bresenham
+## Bresenham
 ### Objetivo
 A primeira atividade da disciplina de Introdução à Computação Gráfica tem como principal objetivo o desenvolvimento e implementação do algorimo de Bresenham para a rasterização de linhas. Este, por sua vez, traz uma forma de solucionar o problema de desenhar uma reta em uma tela pixelada. Para tanto, a tarefa propõe a criação de uma função para pintar um pixel na tela, uma função para desenhar uma reta na tela e uma função para desenhar um triângulo na tela. Por fim, além das 3 funções requisitadas, pede-se também que ocorra a interpolação linear das cores durante a formação das retas e do triângulo.
 
@@ -73,7 +73,7 @@ A última etapa da tarefa era o desenho de o um triângulo que é só chamar a f
 ---
 
 ### Resultados
-Após a compreensão tanto do problema quanto do código ficou mais tranquila a resolução da tarefa. Com o famoso de divisão e conquista, o problema se apresentou em problemas menores e mais fáceis. A maior dificuldade foi entender o algoritmo de Bresenham em si e assim criar várias estruturas condicionas para que a entrada fosse polída e pudesse se encaixar neste algoritmo. Acreditamos que o código poderia se apresentar de forma mais enxuta com menos if visto que qualquer redução de código feita será bem vista.
+Após a compreensão do problema proposto a solução da atividade foi atingida com maior facilidade. A maior dificuldade foi entender o algoritmo de Bresenham na teoria propriamente dita e conseguir generalizá-lo para os diferentes tipos de entradas. Acreditamos que o código referente a generalização do algoritmo pode se apresentar de forma mais otimizada e que também é possível a implementação do algoritmo de preenchimento dos triângulos.
 
 <p align="center">
 	<br>
@@ -100,8 +100,10 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 
 ### Referências
 
-http://wesnydyribeiro.blogspot.com/2017/02/rasterizacao-de-pontos-e-linhas.html?m=1
+* Notas de aula.
 
-https://en.wikipedia.org/wiki/Rasterisation
+* http://wesnydyribeiro.blogspot.com/2017/02/rasterizacao-de-pontos-e-linhas.html?m=1
+
+* https://en.wikipedia.org/wiki/Rasterisation
 
 ---
