@@ -25,13 +25,20 @@ Inicialmente, o posicionamento de um pixel na tela é fundamental para o desenvo
 	<br>
 </p>
 
+<p align="center">
+	<br>
+	<img src="./prints/pontos.png"/ width=513px height=543px>
+	<h5 align="center">Figura 2 - Pontos</h5>
+	<br>
+</p>
+
 #### Rasterização de Linhas
 O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante da tela, ou seja, retas entre 0º e 45º. Para que possamos representar retas nos demais octantes é preciso realizar uma generalização do algoritmo.
 
 <p align="center">
 	<br>
 	<img src="./prints/reta.png"/ width=513px height=537px>
-	<h5 align="center">Figura 2 - Limitação do Algoritmo</h5>
+	<h5 align="center">Figura 3 - Limitação do Algoritmo</h5>
 	<br>
 </p>
 
@@ -46,7 +53,7 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 <p align="center">
 	<br>
 	<img src="./prints/retas1.png"/ width=513px height=537px>
-	<h5 align="center">Figura 3 - Algoritmo Corrigido</h5>
+	<h5 align="center">Figura 4 - Algoritmo Corrigido</h5>
 	<br>
 </p>
 
@@ -56,7 +63,14 @@ A interpolação linear das cores foi solucionada com uma simples lógica matem�
 <p align="center">
 	<br>
 	<img src="./prints/interpolação.png"/ width=779px height=203px>
-	<h5 align="center">Figura 4 - Função de Interpolação de Cores</h5>
+	<h5 align="center">Figura 5 - Função de Interpolação de Cores</h5>
+	<br>
+</p>
+
+<p align="center">
+	<br>
+	<img src="./prints/retas2.png"/ width=508px height=539px>
+	<h5 align="center">Figura 6 - Retas</h5>
 	<br>
 </p>
 
@@ -65,27 +79,7 @@ A última etapa da tarefa era o desenho de o um triângulo que é só chamar a f
 <p align="center">
 	<br>
 	<img src="./prints/drawTriangle.png"/ width=825px height=96px>
-	<h5 align="center">Figura 5 -Função de desenhar o Triângulo</h5>
-	<br>
-</p>
-
-
----
-
-### Resultados
-Após a compreensão do problema proposto a solução da atividade foi atingida com maior facilidade. A maior dificuldade foi entender o algoritmo de Bresenham na teoria propriamente dita e conseguir generalizá-lo para os diferentes tipos de entradas. Acreditamos que o código referente a generalização do algoritmo pode se apresentar de forma mais otimizada e que também é possível a implementação do algoritmo de preenchimento dos triângulos.
-
-<p align="center">
-	<br>
-	<img src="./prints/pontos.png"/ width=513px height=543px>
-	<h5 align="center">Figura 6 - Pontos</h5>
-	<br>
-</p>
-
-<p align="center">
-	<br>
-	<img src="./prints/retas2.png"/ width=508px height=539px>
-	<h5 align="center">Figura 7 - Retas</h5>
+	<h5 align="center">Figura 7 -Função de desenhar o Triângulo</h5>
 	<br>
 </p>
 
@@ -98,6 +92,16 @@ Após a compreensão do problema proposto a solução da atividade foi atingida 
 
 ---
 
+### Dificuldades
+Após a compreensão do problema proposto a solução da atividade foi atingida com maior facilidade. A maior dificuldade foi entender o algoritmo de Bresenham na teoria propriamente dita e conseguir generalizá-lo para os diferentes tipos de entradas. 
+
+---
+
+### Melhorias
+Acreditamos que o código referente a generalização do algoritmo pode se apresentar de forma mais otimizada e que também é possível a implementação do algoritmo de preenchimento dos triângulos.
+
+---
+
 ### Referências
 
 * Notas de aula.
@@ -107,3 +111,10 @@ Após a compreensão do problema proposto a solução da atividade foi atingida 
 * https://en.wikipedia.org/wiki/Rasterisation
 
 ---
+
+### Compilando e executando o projeto
+Para compilar e executar o projeto, basta digitar os seguintes comandos no terminal:
+```sh
+    $ make
+    $ ./cgprog
+```
