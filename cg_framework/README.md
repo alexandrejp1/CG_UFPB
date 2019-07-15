@@ -41,8 +41,8 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 <ul>
 	<li>A primeira modificação a ser feita é considerar apenas os valores absolutos das variações dx e dy.</li>
 	<li>A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi)</li>
-  <li>A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.</li>
-  <li>Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.</li>
+	<li>A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.</li>
+	<li>Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.</li>
 <ul>
 
 #### Interpolação das Cores
