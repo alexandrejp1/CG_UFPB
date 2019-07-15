@@ -46,7 +46,7 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 É sabido que a tela não apresenta cordenadas negativas e como temos a necessidade de representar as retas dos demais octantes, modificaremos o algoritmo de forma que todas as retas consigam ser representadas no primeiro quadrante, mantendo seu sentido e inclinação.
 
 * A primeira modificação a ser feita é considerar apenas os valores absolutos das variações dx e dy.
-* A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi).
+* A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial (xi,yi).
 * A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.
 * Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.
 
