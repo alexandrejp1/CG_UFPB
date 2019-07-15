@@ -20,7 +20,7 @@ Inicialmente, o posicionamento de um pixel na tela é fundamental para o desenvo
 
 <p align="center">
 	<br>
-	<img src="./prints/putPixel.png"/ width=544px height=93px>
+	<img src="./prints/putPixel.png"/ width=483px height=200px>
 	<h5 align="center">Figura 1 - Função PutPixel()</h5>
 	<br>
 </p>
@@ -30,7 +30,7 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 
 <p align="center">
 	<br>
-	<img src="./prints/reta.png"/ width=544px height=93px>
+	<img src="./prints/reta.png"/ width=513px height=537px>
 	<h5 align="center">Figura 2 - Limitação do Algoritmo</h5>
 	<br>
 </p>
@@ -38,20 +38,25 @@ O algoritmo de Bresenham funciona apenas para desenhar retas no primeiro octante
 #### Generalização do Algoritmo de Bresenham
 É sabido que a tela não apresenta cordenadas negativas e como temos a necessidade de representar as retas dos demais octantes, modificaremos o algoritmo de forma que todas as retas consigam ser representadas no primeiro quadrante, mantendo seu sentido e inclinação.
 
-<ul>
-	<li>A primeira modificação a ser feita é considerar apenas os valores absolutos das variações dx e dy.</li>
-	<li>A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi).</li>
-	<li>A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.</li>
-	<li>Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.</li>
-<ul>
+* A primeira modificação a ser feita é considerar apenas os valores absolutos das variações dx e dy.
+* A segunda modificação a ser feita é expandir o algoritmo para dar suporte à simetria das retas: verifica-se os valores das cordenadas do ponto final (xf,yf) são menores que as cordenadas do ponto inicial(xi,yi).
+* A terceira modificação é adicionar ao algoritmo o passo responsável por desenhar retas com ângulo de 90º.
+* Na quarta e última modificação, verificamos se o valor da variação da reta no eixo y é maior que a variação da reta no eixo x.
+
+<p align="center">
+	<br>
+	<img src="./prints/retas1.png"/ width=513px height=537px>
+	<h5 align="center">Figura 3 - Algoritmo Corrigido</h5>
+	<br>
+</p>
 
 #### Interpolação das Cores
 A interpolação linear das cores foi solucionada com uma simples lógica matemática em que a posição atual da reta é dividida pelo tamanho total gerando assim números de 0 a 1 chamado no código de "t"  e esse número é multiplicado pela cor final e (1-t) é multiplicado pela cor inicial. Dessa forma, ocorre a transição da cor inicial para a final. 
 
 <p align="center">
 	<br>
-	<img src="./prints/interpolação.png"/ width=924px height=266px>
-	<h5 align="center">Figura 3 - Função de Interpolação de Cores</h5>
+	<img src="./prints/interpolação.png"/ width=779px height=203px>
+	<h5 align="center">Figura 4 - Função de Interpolação de Cores</h5>
 	<br>
 </p>
 
@@ -59,8 +64,8 @@ A interpolação linear das cores foi solucionada com uma simples lógica matem�
 A última etapa da tarefa era o desenho de o um triângulo que é só chamar a função de desenhar linha três vezes.
 <p align="center">
 	<br>
-	<img src="./prints/drawTriangle.png"/ width=1018px height=89px>
-	<h5 align="center">Figura 4 -Função de desenhar o Triângulo</h5>
+	<img src="./prints/drawTriangle.png"/ width=825px height=96px>
+	<h5 align="center">Figura 5 -Função de desenhar o Triângulo</h5>
 	<br>
 </p>
 
@@ -72,22 +77,22 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 
 <p align="center">
 	<br>
-	<img src="./prints/pontos.png"/ width=412px height=449px>
-	<h5 align="center">Figura 5 - Pontos</h5>
+	<img src="./prints/pontos.png"/ width=513px height=543px>
+	<h5 align="center">Figura 6 - Pontos</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./prints/retas.png"/ width=412px height=449px>
-	<h5 align="center">Figura 6 - Retas</h5>
+	<img src="./prints/retas2.png"/ width=508px height=539px>
+	<h5 align="center">Figura 7 - Retas</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<img src="./prints/triangulo.png"/ width=412px height=449px>
-	<h5 align="center">Figura 7 - Triangulo</h5>
+	<img src="./prints/triangulo.png"/ width=510px height=535px>
+	<h5 align="center">Figura 8 - Triângulo</h5>
 	<br>
 </p>
 
